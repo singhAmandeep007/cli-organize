@@ -1,6 +1,6 @@
 [submodule "cli-organize-go"]
 	path = cli-organize-go
-	url = ../cli-organize-go
+	url = https://github.com/singhAmandeep007/cli-organize-go.git
 [submodule "cli-organize-py"]
 	path = cli-organize-py
-	url = ../cli-organize-py
+	url = https://github.com/singhAmandeep007/cli-organize-py.git
