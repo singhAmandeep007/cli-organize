@@ -1,0 +1,6 @@
+[submodule "cli-organize-go"]
+	path = cli-organize-go
+	url = ../cli-organize-go
+[submodule "cli-organize-py"]
+	path = cli-organize-py
+	url = ../cli-organize-py
