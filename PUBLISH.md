@@ -27,7 +27,7 @@ Sub-repos must be pushed before the parent so the submodule references resolve.
 
 ```bash
 cd /path/to/cli-organize-go
-git remote add origin git@github.com:singhAmandeep007/cli-organize-go.git
+git remote add origin https://github.com/singhAmandeep007/cli-organize-go.git
 git push -u origin main
 ```
 
@@ -35,7 +35,7 @@ git push -u origin main
 
 ```bash
 cd /path/to/cli-organize-py
-git remote add origin git@github.com:singhAmandeep007/cli-organize-py.git
+git remote add origin https://github.com/singhAmandeep007/cli-organize-py.git
 git push -u origin main
 ```
 
@@ -45,8 +45,8 @@ The `.gitmodules` file currently uses relative local paths. Update them to GitHu
 
 ```bash
 cd /path/to/cli-organize
-git config --file .gitmodules submodule.cli-organize-go.url git@github.com:singhAmandeep007/cli-organize-go.git
-git config --file .gitmodules submodule.cli-organize-py.url git@github.com:singhAmandeep007/cli-organize-py.git
+git config --file .gitmodules submodule.cli-organize-go.url https://github.com/singhAmandeep007/cli-organize-go.git
+git config --file .gitmodules submodule.cli-organize-py.url https://github.com/singhAmandeep007/cli-organize-py.git
 ```
 
 Also update the git config for the submodules:
@@ -65,7 +65,7 @@ git commit -m "chore: update submodule URLs to GitHub remotes"
 ## Step 4: Push the Parent Repo
 
 ```bash
-git remote add origin git@github.com:singhAmandeep007/cli-organize.git
+git remote add origin https://github.com/singhAmandeep007/cli-organize.git
 git push -u origin main
 ```
 
@@ -76,7 +76,7 @@ git push -u origin main
 ### Full clone with submodules
 
 ```bash
-git clone --recurse-submodules git@github.com:singhAmandeep007/cli-organize.git
+git clone --recurse-submodules https://github.com/singhAmandeep007/cli-organize.git
 ```
 
 ### If already cloned without submodules
@@ -101,12 +101,12 @@ git push
 
 ---
 
-## Using HTTPS Instead of SSH
+## Using SSH Instead of HTTPS
 
-If you prefer HTTPS over SSH, replace `git@github.com:` with `https://github.com/` in all URLs above. For example:
+If you prefer SSH over HTTPS, replace `https://github.com/` with `git@github.com:` in all URLs above. For example:
 
 ```
-https://github.com/singhAmandeep007/cli-organize-go.git
+git@github.com:singhAmandeep007/cli-organize-go.git
 ```
 
 ---
